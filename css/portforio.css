@@ -177,7 +177,7 @@ time {
 #line-up{
 	height: 100%;
 	text-align: center;
-	padding: 10px　0px;
+	padding: 100px　0px;
 	background-color: #E0CFF9;
 }
 /*
@@ -247,18 +247,34 @@ time {
     -webkit-box-pack: justify;
     justify-content:center;
 }
-.line-up-title {
-    margin: 0.2em 0 0;
-    color: #333;
-    font-size: 1.1em;
-}
 .item-product{
 	position: absolute;
-	left: 50%;　
-/*	これダメ*/
     bottom: 0;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
+}
+.shampoo a{
+	color: black;
+	text-decoration: none;
+}
+.shampoo a:hover{
+	text-decoration: none;
+	color: #888888;
+}
+.shampoo　h2 {
+	top:50px;
+    margin: 0.2em 0 0;
+	margin-top: 50px; 
+	padding-top: 50px;
+    color: #333;
+    font-size: 1.1em;
+	text-decoration: none;
+}
+.shampoo　p {
+    margin: 0.2em 0 0;
+    color: #333;
+    font-size: 1.1em;
+	text-decoration: none;
 	
 }
 /*＝＝＝＝＝＝＝＝＝
