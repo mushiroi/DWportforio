@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 body{
-	 background-color:#E5E5E5;
+	 background-color:#F7F7F7;/*#B2B19C*/
 	  width:100%;
 	min-width: 100%;
 	margin:0px 0px 0px 0px;
@@ -14,6 +14,9 @@ a:hover{
 }
 ul{
 	list-style: none;
+}
+li{
+list-style: none;
 }
 /*＝＝＝＝＝＝＝＝＝＝＝
 　💖ヘッダー💖
@@ -171,13 +174,13 @@ time {
 /*＝＝＝＝＝＝＝＝＝
 　　商品 line-up
 ＝＝＝＝＝＝＝＝＝*/
-/*
 #line-up{
 	height: 100%;
 	text-align: center;
 	padding: 10px　0px;
 	background-color: #E0CFF9;
 }
+/*
 #line-up h1{
 	text-align: center;
 }
@@ -191,7 +194,6 @@ time {
 	float: left;
 	list-style: none;
 }
-*/
 .shampoo{
     position: relative;
     display: -webkit-box;
@@ -205,36 +207,26 @@ time {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     justify-content:center;
-	}
-.shampoo{
+	
 	flex: 1 1 100%;
 	text-align: center;
 }
 .img-item {
 	height: 550px;
 	width: 430px;
-/*	position: relative;*/
-/*	overflow: hidden;*/
+	position: relative;
+	overflow: hidden;
 }
 .item-product{
-/*	display: flex;*/
+	display: flex;
 	position: absolute;
 	z-index: 5;
-/*	justify-content: center;*/
-	text-align: center;
-	background-color: red;
-/*
-	display: block;
-	position: absolute;
-	margin: auto;
-*/
+	right: 50%;
 }
 .item-material{
-/*	display: block;*/
-/*	position: relative;*/
+	display: block;
+	position: relative;
 	z-index: 1;
-/*	justify-content: center;*/
-/*
 	width: auto;
 	height: auto;
 	min-width: 501%;
@@ -243,9 +235,32 @@ time {
 	left: 50%;
 	transform: translate(-50%,-50%) calc(0.2);
 	opacity: 1;
-*/
 }
-
+*/
+.line-up-group {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content:center;
+}
+.line-up-title {
+    margin: 0.2em 0 0;
+    color: #333;
+    font-size: 1.1em;
+}
+.item-product{
+	position: absolute;
+	left: 50%;　
+/*	これダメ*/
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+	
+}
 /*＝＝＝＝＝＝＝＝＝
 　　記事 story
 ＝＝＝＝＝＝＝＝＝*/
