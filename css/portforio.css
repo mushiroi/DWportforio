@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	 background-color:#E5E5E5;
+	  width:100%;
+	min-width: 100%;
+	margin:0px 0px 0px 0px;
+}
+a {
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+/*＝＝＝＝＝＝＝＝＝＝＝
+　💖ヘッダー💖
+＝＝＝＝＝＝＝＝＝＝＝＝*/
+/*透明にしたりするの*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  transition: all 0.5s ease;
+　z-index: 500;
+}
+
+.hidden {
+  background: none;
+  transition: all 1.0s ease;
+ z-index: 500;
+}
+/* other - nav */
+header0{
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 20px;
+  margin: 0;
+ z-index: 500;
+}
+nav a {
+  color: black;
+/*  text-decoration: none;*/
+}
+nav li {
+  display: inline;
+  margin-right: 16px;
+}
+nav .here {
+  color: #fff;
+  padding: 5px 10px;
+  background: rgba(13, 62, 68, 0.42);
+  border-radius: 4px;
+}
+/*=========⭐️===========
+		💖メイン💖
+===========⭐️============*/
+.main{
+	height: 100%;
+	/*margin-top:50px;*/	/*ヘッダー重なり回避 消す？？*/
+}
+/*＝＝＝＝＝＝＝＝＝
+　　top 画像
+＝＝＝＝＝＝＝＝＝*/
+.image-text{
+	display:flex;
+	justify-content: flex-end;
+}
+.text1 {
+	padding: 0% 65% 0 20%;
+	position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 30%;
+    font-size: 20px;
+    line-height: 150%;
+}
+.text1 h1{
+	font-size: 30px;
+	padding: 30px;
+	margin-top:80px;
+}
+
+/*＝＝＝＝＝＝＝＝＝
+　　NEWS お知らせ
+＝＝＝＝＝＝＝＝＝*/
+.news{
+	height: 100%;
+	position: relative;
+}
+/* カードレイアウト部分をラッピングし、
+Flexboxを指定"space-between"で各アイテムを均等に配置し、
+最初と最後のアイテムを端に寄せます。*/
+#cardlayout-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin: 2em auto;
+    max-width: 960px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content:center;
+}
+/* カードレイアウト内の画像を幅いっぱいに表示 */
+/*
+#cardlayout-wrap img {
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+.card-figure {
+    margin: 0;
+    padding: 0;
+}
+time {
+	color: #DBD9D9;
+	font-size: 10px;
+}
+.info{
+	font-size: 10px;
+	color: #DBD9D9;
+}
+*/
+/* カードレイアウトのタイトル部分 */
+.card-title {
+    margin: 0.2em 0 0;
+    color: #333;
+    font-size: 1.1em;
+}
+/* カードレイアウトを1カラムで配置 */
+/*
+.card-list {
+    padding: 0;
+    width: 240px;
+	height: 288px;
+}
+*/
+/* 画面幅768px以上の場合カードレイアウトを2カラムで配置 */
+/*
+@media all and (min-width: 768px) {
+    .card-list {
+        margin: 0.5em 0;
+        width: calc(100% / 2);  100%幅を2で割るという指定 
+    }
+}
+*/
+/* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
+/*
+@media all and (min-width: 992px) {
+    .card-list {
+        width: calc(100% / 3);  100%幅を3で割るという指定 
+    }
+*/
+/* 最後の行が3列より少ない場合左寄せにレイアウトさせる */
+/*
+    #cardlayout-wrap::after{
+        content: "";
+        display: block;
+        width: calc(100% / 3);
+    }
+}
+*/
+/*＝＝＝＝＝＝＝＝＝
+　　商品 line-up
+＝＝＝＝＝＝＝＝＝*/
+/*
+#line-up{
+	height: 100%;
+	text-align: center;
+	padding: 10px　0px;
+	background-color: #E0CFF9;
+}
+#line-up h1{
+	text-align: center;
+}
+#line-up a{
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+#line-up-group{
+	margin: 65px 0 0;
+	float: left;
+	list-style: none;
+}
+*/
+.shampoo{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin: 2em auto;
+    max-width: 960px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content:center;
+	}
+.shampoo{
+	flex: 1 1 100%;
+	text-align: center;
+}
+.img-item {
+	height: 550px;
+	width: 430px;
+/*	position: relative;*/
+/*	overflow: hidden;*/
+}
+.item-product{
+/*	display: flex;*/
+	position: absolute;
+	z-index: 5;
+/*	justify-content: center;*/
+	text-align: center;
+	background-color: red;
+/*
+	display: block;
+	position: absolute;
+	margin: auto;
+*/
+}
+.item-material{
+/*	display: block;*/
+/*	position: relative;*/
+	z-index: 1;
+/*	justify-content: center;*/
+/*
+	width: auto;
+	height: auto;
+	min-width: 501%;
+	min-height: calc(501%-100px);
+	top: calc(50%-50px);
+	left: 50%;
+	transform: translate(-50%,-50%) calc(0.2);
+	opacity: 1;
+*/
+}
+
+/*＝＝＝＝＝＝＝＝＝
+　　記事 story
+＝＝＝＝＝＝＝＝＝*/
+.story{
+	background-color: #F5EDD6;
+	height: 100%;
+	padding: 50px 0px;
+}
+
+/*＝＝＝＝＝＝＝＝＝
+　💖フッター💖
+＝＝＝＝＝＝＝＝＝*/
+.footer{
+	background-color: #E3E3E3;
+	padding-top:100px; 
+}
+.footer1 ul{
+background-color: #E3E3E3;
+	justify-content:center;
+	list-style: none;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	text-decoration: none;
+}
+.footer1 li{
+	padding: 40px;
+}
+.footer1 a{
+	color:gray;
+	text-decoration: none;
+}
+.footer2 ul{
+	background-color: #000000;
+	justify-content:center;
+	list-style: none;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	color:white;
+	text-decoration:none;
+}
+.footer2 li{
+	padding: 60px 30px;
+}
+.footer2 a{
+	color: white;
+}
+
