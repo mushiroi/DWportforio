@@ -41,6 +41,7 @@
   box-sizing: border-box;
 }
 
+/*
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -62,29 +63,32 @@ body {
   text-align: left;
   background-color: #fff;
 }
+*/
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
 
-hr {
+.story hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.carousel-caption h3 h4 h5  h6 {
+/*
   margin-top: 0;
   margin-bottom: 0.5rem;
+*/
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+.carousel-caption p {
+/*  margin:10px -11px 1px 309px; */
+　background-color: cadetblue;
 }
 
-abbr[title],
-abbr[data-original-title] {
+.story abbr[title],
+.story abbr[data-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
@@ -94,31 +98,31 @@ abbr[data-original-title] {
   text-decoration-skip-ink: none;
 }
 
-address {
+.story address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
 }
 
-ol,
-ul,
-dl {
+.story ol
+.story ul
+.story dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
+.story ol ol
+.story ul ul
+.story ol ul
+.story ul ol {
   margin-bottom: 0;
 }
 
-dt {
+.story dt {
   font-weight: 700;
 }
 
-dd {
+.story dd {
   margin-bottom: .5rem;
   margin-left: 0;
 }
@@ -355,13 +359,18 @@ template {
   display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
+.story h3, .story h4,.story h5,.story h6,
+.story h3, .story h4, .story h5, .story h6 {
+/*
+ margin: -12.2em -11px 0.8em 309px;  0.5rem
   font-weight: 500;
   line-height: 1.2;
+*/
+	background-color: brown;
+
 }
 
+/* 私がコメントアウトした
 h1, .h1 {
   font-size: 2.5rem;
 }
@@ -369,6 +378,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 2rem;
 }
+*/
 
 h3, .h3 {
   font-size: 1.75rem;
@@ -6546,7 +6556,7 @@ a.close.disabled {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   z-index: 15;
   display: -ms-flexbox;
@@ -6589,14 +6599,16 @@ a.close.disabled {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
+  right: 10%;
+  top:10px;
+  bottom: 10px;
+  left: 60%;
   z-index: 10;
-  padding-top: 20px;
+/*  padding-top: 20px;*/
   padding-bottom: 20px;
-  color: #fff;
+  color: black;
   text-align: center;
+  background-color: white;
 }
 
 @-webkit-keyframes spinner-border {

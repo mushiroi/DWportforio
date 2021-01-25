@@ -3,7 +3,7 @@ window.addEventListener( "scroll", function() {
 
   var headerElement = document.getElementById( "header" ) ; 
 	// `#header`セレクタを取得
-  var rect = headerElement.getBoundingClientRect() ; // 
+  var rect = headerElement.getBoundingClientRect(top) ; // 
   var y = rect.top + window.pageYOffset ; 
 	// Y方向 (縦)にスクロール量を取得（pageYOffset：windowオブジェクト。現在表示位置のY座標を取得）
   if (y > 0) { 

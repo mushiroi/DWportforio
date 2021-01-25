@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 body{
-	 background-color:#F7F7F7;/*#B2B19C*/
+	 background-color:#C0C0C0;/*#B2B19C*/
 	  width:100%;
 	min-width: 100%;
 	margin:0px 0px 0px 0px;
@@ -18,23 +18,25 @@ ul{
 li{
 list-style: none;
 }
-/*＝＝＝＝＝＝＝＝＝＝＝
-　💖ヘッダー💖
-＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+/*=========⭐️===========
+		💖ヘッター💖
+===========⭐️============*/
 /*透明にしたりするの*/
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   background: #fff;
-  transition: all 0.5s ease;
-　z-index: 500;
+  transition: all 1.5s ease;
+　z-index: 1000;
 }
 
 .hidden {
   background: none;
   transition: all 1.0s ease;
- z-index: 500;
+  z-index: 1000;
+	position:fixed;
 }
 /* other - nav */
 header0{
@@ -67,9 +69,9 @@ nav .here {
 	/*margin-top:50px;*/	/*ヘッダー重なり回避 消す？？*/
 }
 /*＝＝＝＝＝＝＝＝＝
-　　top 画像
+　　✊top 画像
 ＝＝＝＝＝＝＝＝＝*/
-.image-text{
+.top{
 	display:flex;
 	justify-content: flex-end;
 }
@@ -77,7 +79,7 @@ nav .here {
 	padding: 0% 65% 0 20%;
 	position: absolute;
     top: 10px;
-    right: 20px;
+    left: 10%;
     width: 30%;
     font-size: 20px;
     line-height: 150%;
@@ -86,10 +88,13 @@ nav .here {
 	font-size: 30px;
 	padding: 30px;
 	margin-top:80px;
+	background-color: darkturquoise
 }
-
+.text1 p{
+	background-color: aqua
+}
 /*＝＝＝＝＝＝＝＝＝
-　　NEWS お知らせ
+　　✊NEWS お知らせ
 ＝＝＝＝＝＝＝＝＝*/
 .news{
 	height: 100%;
@@ -113,7 +118,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     justify-content:center;
 }
 /* カードレイアウト内の画像を幅いっぱいに表示 */
-/*
 #cardlayout-wrap img {
 	display: block;
     max-width: 100%;
@@ -131,7 +135,6 @@ time {
 	font-size: 10px;
 	color: #DBD9D9;
 }
-*/
 /* カードレイアウトのタイトル部分 */
 .card-title {
     margin: 0.2em 0 0;
@@ -139,13 +142,12 @@ time {
     font-size: 1.1em;
 }
 /* カードレイアウトを1カラムで配置 */
-/*
 .card-list {
     padding: 0;
     width: 240px;
 	height: 288px;
+	background-color:white;
 }
-*/
 /* 画面幅768px以上の場合カードレイアウトを2カラムで配置 */
 /*
 @media all and (min-width: 768px) {
@@ -172,71 +174,15 @@ time {
 }
 */
 /*＝＝＝＝＝＝＝＝＝
-　　商品 line-up
+　　✊商品 line-up
 ＝＝＝＝＝＝＝＝＝*/
 #line-up{
 	height: 100%;
 	text-align: center;
-	padding: 100px　0px;
-	background-color: #E0CFF9;
+/*	padding: 600px　0px;*/
+	padding: 10px 0 10%;
+/*	background-color: rebeccapurple;*/
 }
-/*
-#line-up h1{
-	text-align: center;
-}
-#line-up a{
-	display: block;
-	text-decoration: none;
-	color: black;
-}
-#line-up-group{
-	margin: 65px 0 0;
-	float: left;
-	list-style: none;
-}
-.shampoo{
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    margin: 2em auto;
-    max-width: 960px;
-    width: 100%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    justify-content:center;
-	
-	flex: 1 1 100%;
-	text-align: center;
-}
-.img-item {
-	height: 550px;
-	width: 430px;
-	position: relative;
-	overflow: hidden;
-}
-.item-product{
-	display: flex;
-	position: absolute;
-	z-index: 5;
-	right: 50%;
-}
-.item-material{
-	display: block;
-	position: relative;
-	z-index: 1;
-	width: auto;
-	height: auto;
-	min-width: 501%;
-	min-height: calc(501%-100px);
-	top: calc(50%-50px);
-	left: 50%;
-	transform: translate(-50%,-50%) calc(0.2);
-	opacity: 1;
-}
-*/
 .line-up-group {
     position: relative;
     display: -webkit-box;
@@ -249,49 +195,146 @@ time {
 }
 .item-product{
 	position: absolute;
-    bottom: 0;
+    bottom: 80px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
+}
+.item-material{
+	flex-grow: 1;
 }
 .shampoo a{
 	color: black;
 	text-decoration: none;
+	padding-top: 50px;
 }
 .shampoo a:hover{
 	text-decoration: none;
 	color: #888888;
 }
-.shampoo　h2 {
+shampoo-text {
 	top:50px;
     margin: 0.2em 0 0;
-	margin-top: 50px; 
-	padding-top: 50px;
+	margin-top: 200px; 
+	padding-top: 200px;
     color: #333;
     font-size: 1.1em;
 	text-decoration: none;
+	background: #619496;
 }
 .shampoo　p {
     margin: 0.2em 0 0;
     color: #333;
     font-size: 1.1em;
 	text-decoration: none;
-	
 }
+
 /*＝＝＝＝＝＝＝＝＝
-　　記事 story
+　　期間限定
+＝＝＝＝＝＝＝＝＝*/
+.seasonal{
+	padding-top:90px;
+}
+
+
+/*＝＝＝＝＝＝＝＝＝
+　　✊記事 story
 ＝＝＝＝＝＝＝＝＝*/
 .story{
 	background-color: #F5EDD6;
 	height: 100%;
-	padding: 50px 0px;
+	padding: 20px 0px 0;
+	text-align: center;
 }
 
-/*＝＝＝＝＝＝＝＝＝
-　💖フッター💖
-＝＝＝＝＝＝＝＝＝*/
+.story-calc {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	max-width: 960px;
+	width: 100%;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 15;
+	margin: 2em auto;
+}
+/* リンクテキストの下線を非表示 */
+a.story-link {
+	text-decoration: none;
+}
+.story-calc a:hover{
+	text-decoration: none;
+	color: #888888;
+}
+/* カードレイアウト内の画像を幅いっぱいに表示 */
+.story-calc img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.story-figure {
+	margin: 0;
+	padding: 0;
+}
+/* カードレイアウトのタイトル部分 */
+.story-title {
+	margin: 0.6em 0 0;
+	color: #333;
+	text-align: center;
+	font-size: 1.8em;
+}
+/* カードレイアウトの説明文部分 */
+.story-text-tax {
+	margin: 0;
+	padding: 1em;
+	color: #818181;
+}
+/* カードレイアウトを1カラムで配置 */
+.story-list {
+	margin: 0.5em auto;
+	padding: 0;
+	width: 96%;
+	background: #f0f0f0;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+
+width: calc(96% / 3);   
+}
+/* 画面幅768px以上の場合カードレイアウトを2カラムで配置 */
+/*
+@media all and (min-width: 768px) {
+    .story-list {
+		margin: 0.5em 0;
+		width: calc(96% / 2);  96%幅を2で割るという指定 
+    }
+}
+*/
+/* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
+/*
+@media all and (min-width: 992px) {
+    .story-list {
+width: calc(96% / 3);  96%幅を3で割るという指定 
+}
+*/
+/* 最後の行が3列より少ない場合左寄せにレイアウトさせる */
+/*
+.story-calc::after{
+content: "";
+display: block;
+width: calc(96% / 3);
+    }
+}
+*/
+/*＝＝＝＝＝⭐️＝＝＝＝
+　　　　💖フッター💖
+＝＝＝＝＝＝⭐️＝＝＝＝＝*/
 .footer{
 	background-color: #E3E3E3;
-	padding-top:100px; 
+	padding-top:100px;
+	 width: 100%;
 }
 .footer1 ul{
 background-color: #E3E3E3;
@@ -311,22 +354,39 @@ background-color: #E3E3E3;
 	color:gray;
 	text-decoration: none;
 }
-.footer2 ul{
+.footer2{
+	padding: 0px;
+	font-size:0.8em;
 	background-color: #000000;
-	justify-content:center;
-	list-style: none;
-	display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
+	display:-webkit-flex;
+	display: flex;
+}
+.footer2 ul{
 	color:white;
 	text-decoration:none;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
 }
 .footer2 li{
-	padding: 60px 30px;
+	float: left;
+	font-size:0.6em;
+}
+.footer2-li{
+	padding: 32px 10px 0;	
+}
+.footer2-img{
+	padding:  0;
+}
+.footer2 p{
+	float: right;
+	color: white;
+	font-size: 0.5em;
+	padding: 30px 0px 0;
+	display: block
 }
 .footer2 a{
 	color: white;
 }
+
 
