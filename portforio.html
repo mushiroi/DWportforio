@@ -7,13 +7,13 @@
 <title>商品サイト</title>
 <link href="css/portforio.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
-<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+ <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
 <script src="js/portforio.js"></script>
 </head>
 <body>
 <!--=========⭐️===========
 		💖ヘッター💖
-===========⭐️============-->
+  ===========⭐️============-->
 <div class="header hidden" id="header">
 <nav class="header0">
 <ul >
@@ -22,13 +22,8 @@
 	<li><a href="#NEWS">NEWS</a></li>
 	<li><a href="#STORY">STORY</a></li>
 	<li><a href="#LINE UP">LINE UP</a></li>
-</ul>	
-<!--
-<ul >
-	<li>SALON SEARCH</li>
-	<li><a href="https://www.seesaw-hair.com">for SALON</a></li>	
+	<li class="salon-search"><a href="https://www.seesaw-hair.com">for SALON</a></li>	
 </ul>
--->
 </nav>
 </div>
 	
@@ -44,42 +39,47 @@
 	<div class="text1">
 	<section class="text1">
 	<h1>企業名</h1>
-<!--	<p>こんわがはいは猫である。名前はまだ無い。どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪どうあくな種族であったそうだ。</p>-->
+	<p>こんわがはいは猫である。名前はまだ無い。どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見。</p>
 	</section>
 	</div>
 </div>
 <!--****************
 ！！！ニュース！！！
 ****************-->
-	<h2><a id="NEWS">NEWS</a></h2>
-<div id="cardlayout-wrap">
-<section class="card-list">
-	<a href="portforio-news.html">
-	<figure class="card-figure">
-	<img src="images/雲.png" width="240" height="160" alt="画像"></figure>
-	<time>2019-06-06</time>
-	<em class="info">INFORMATION</em>
-	<h2 class="card-title">MS/MS GALLERY 2020</h2>
-</a>
-</section>
-<section class="card-list">
-	<a href="portforio-news.html">
-	<figure class="card-figure">
-	<img src="images/雲.png" width="240" height="160" alt="画像"></figure>
-	<time datetime="news-time">2020.10.10</time>
-	<em class="info">INFORMATION</em>
-	<h2 class="card-title">MS/MS GALLERY 2020</h2>
-</a>
-</section>
-<section class="card-list">
-	<a href="portforio-news.html">
-	<figure class="card-figure">
-	<img src="images/雲.png" width="240" height="160" alt="画像"></figure>
-	<time datetime="news-time">2020.10.10</time>
-	<em class="info">INFORMATION</em>
-	<h2 class="card-title">MS/MS GALLERY 2020</h2>
-</a>
-</section>
+<div class="news">
+ <ul class="cardlayout-wrap1">
+	<li><a id="NEWS"><h2>NEWS</h2></a></li>
+	<li><p>MORE</p></li>
+ </ul>
+ <div class="cardlayout-wrap">
+	<section class="card-list">
+		<a href="portforio-news.html">
+		<figure class="card-figure">
+		<img src="images/雲.png" width="240" height="160" alt="画像"></figure>
+		<time>2019-06-06</time>
+		<em class="info">INFORMATION</em>
+		<h2 class="card-title">MS/MS GALLERY 2020</h2>
+		</a>
+	</section>
+	<section class="card-list">
+		<a href="portforio-news.html">
+		<figure class="card-figure">
+		<img src="images/雲.png" width="240" height="160" alt="画像"></figure>
+		<time>2019-06-06</time>
+		<em class="info">INFORMATION</em>
+		<h2 class="card-title">MS/MS GALLERY 2020</h2>
+		</a>
+	</section>
+	<section class="card-list">
+		<a href="portforio-news.html">
+		<figure class="card-figure">
+		<img src="images/雲.png" width="240" height="160" alt="画像"></figure>
+		<time>2019-06-06</time>
+		<em class="info">INFORMATION</em>
+		<h2 class="card-title">MS/MS GALLERY 2020</h2>
+		</a>
+	</section>
+ </div>
 </div>
 <!--****************
 ！！！⭐️商品⭐️ line-up！！！
@@ -162,17 +162,12 @@
 		<span class="carousel-control-next-icon" aria-hidden="true"></span> 
 		<span class="sr-only">Next</span> </a> 
 	</div>
+	
+<!--************
+！！！記事 かぶ！！
+****************-->
 <div class="story-calc"><!-- カードレイアウトをラッピング -->
-<section class="story-list">
-   <a class="story-link" href="#">
-     <figure class="story-figure">
-		<img src="images/雲.png" width="300" height="160" alt="画像">
-	</figure>
-    <p class="story-text-tax">Flexboxとcale()</p>
-	<h2 class="story-title">カードレイアウト1</h2>
-   </a>
-</section>
-<section class="story-list">
+ <section class="story-list">
   <a class="story-link" href="#">
     <figure class="story-figure">
 		<img src="images/雲.png" width="300" height="160" alt="画像">
@@ -180,16 +175,25 @@
 	<em class="info">INFORMATION</em>
 	<h2 class="card-title">MS/MS GALLERY 2020</h2>
   </a>
-</section>
-<section class="story-list">
-        <a class="story-link" href="#">
-            <figure class="story-figure">
-				<img src="images/雲.png" width="300" height="160" alt="画像">
-			</figure>
-			<em class="info">INFORMATION</em>
-			<h2 class="card-title">MS/MS GALLERY 2020</h2>
-        </a>
-</section>
+ </section>
+ <section class="story-list">
+  <a class="story-link" href="#">
+    <figure class="story-figure">
+		<img src="images/雲.png" width="300" height="160" alt="画像">
+	</figure>
+	<em class="info">INFORMATION</em>
+	<h2 class="card-title">MS/MS GALLERY 2020</h2>
+  </a>
+ </section>
+ <section class="story-list">
+  <a class="story-link" href="#">
+    <figure class="story-figure">
+		<img src="images/雲.png" width="300" height="160" alt="画像">
+	</figure>
+	<em class="info">INFORMATION</em>
+	<h2 class="card-title">MS/MS GALLERY 2020</h2>
+  </a>
+ </section>
 </div>
 <!--＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 	⭐️フッター⭐️

@@ -1,39 +1,62 @@
 @charset "UTF-8";
-/* header */
 
+
+body{
+/*	 background-color:#C0C0C0;*/
+	/*#B2B19C*/
+	  width:100%;
+	min-width: 100%;
+	margin:0px 0px 0px 0px;
+}
+a {
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+li{
+list-style: none;
+}
+
+/*=========⭐️===========
+		💖ヘッター💖
+===========⭐️============*/
+/*透明にしたりするの*/
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   background: #fff;
-  transition: all 0.5s ease;
+  transition: all 1.5s ease;
+	z-index:1000;
 }
 
 .hidden {
   background: none;
-  transition: all 0.5s ease;
+  transition: all 1.0s ease;
+z-index:1000;
+position:fixed;
 }
-
 /* other - nav */
-
-nav {
+header0{
   font-size: 0.8em;
   font-weight: 300;
   letter-spacing: 1px;
   padding: 20px;
   margin: 0;
+ z-index: 500;
 }
-
 nav a {
-  color: #0d3e44;
-  text-decoration: none;
+  color: black;
+/*  text-decoration: none;*/
 }
-
 nav li {
   display: inline;
   margin-right: 16px;
 }
-
 nav .here {
   color: #fff;
   padding: 5px 10px;
@@ -41,50 +64,197 @@ nav .here {
   border-radius: 4px;
 }
 
-/* other */
 
-html, body, header, footer, section, h1, h2, ul, li, pre {
-  margin: 0;
-  padding: 0;
+/*=========⭐️===========
+		💖メイン💖
+===========⭐️============*/
+.main{
+	top:30px;
+	margin-top:30px;
+	height: 100%;
+	/*margin-top:50px;*/
+	/*ヘッダー重なり回避 消す？？*/
+}
+/*＝＝＝＝＝＝＝＝＝
+　　✊top--menu
+＝＝＝＝＝＝＝＝＝*/
+#top-menu {
+	background-color:lightpink;
+}
+.top-menu1 {
+	text-align: center;
+	margin-left: -10px;
+/*	font-size: 0; */
+	/* タグ改行時の空白防止 */
+}
+.top-menu1 li{
+	display: inline-block;
+	margin-left: 10px;
+/*	font-size: 20px; */
+	/* ulでサイズ0にしたのを戻す */
+}
+/*＝＝＝＝＝＝＝＝＝
+　　✊menu
+＝＝＝＝＝＝＝＝＝*/
+.top-menu2 {
+	text-align: center;
+	margin-left: -10px;
+	font-size: 0; /* タグ改行時の空白防止 */
+}
+.top-menu2 li{
+	
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 14px; /* ulでサイズ0にしたのを戻す */
+}
+/*＝＝＝＝＝＝＝＝＝
+　　✊カード リスト
+＝＝＝＝＝＝＝＝＝*/
+.items{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+ 
+}
+ 
+.item{
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	margin: 0;
+	padding: 20px;
+	width: 33.33333333%;
+	background-color: white;
+	
+margin:0 50px 50px 0;
+width:calc(33.3333333% - 50px);
+	
 }
 
-body {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  color: rgba(255, 255, 255, .85);
-  font-size: .em;
-  text-align: left;
-  background: #347982;
+
+/*＝＝＝＝＝⭐️＝＝＝＝
+　　　　💖フッター💖
+＝＝＝＝＝＝⭐️＝＝＝＝＝*/
+.footer{
+	background-color: #E3E3E3;
+	padding-top:100px;
+	 width: 100%;
+}
+.footer1 ul{
+background-color: #E3E3E3;
+	justify-content:center;
+	list-style: none;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	text-decoration: none;
+}
+.footer1 li{
+	padding: 40px;
+}
+.footer1 a{
+	color:gray;
+	text-decoration: none;
+}
+.footer2{
+	padding: 0px;
+	font-size:0.8em;
+	background-color: #000000;
+	display:-webkit-flex;
+	display: flex;
+}
+.footer2 ul{
+	color:white;
+	text-decoration:none;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+.footer2 li{
+	float: left;
+	font-size:0.6em;
+}
+.footer2-li{
+	padding: 32px 10px 0;	
+}
+.footer2-img{
+	padding:  0;
+}
+.footer2 p{
+	float: right;
+	color: white;
+	font-size: 0.5em;
+	padding: 30px 0px 0;
+	display: block
+}
+.footer2 a{
+	color: white;
 }
 
-a {
-  color: #b5d898;
-  text-decoration: none;
-  margin: 0 5px;
+
+
+
+
+/*＝＝＝＝＝⭐️＝＝＝＝
+　　　　💖フッター💖
+＝＝＝＝＝＝⭐️＝＝＝＝＝*/
+.footer{
+	background-color: #E3E3E3;
+	padding-top:100px;
+	 width: 100%;
+}
+.footer1 ul{
+background-color: #E3E3E3;
+	justify-content:center;
+	list-style: none;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	text-decoration: none;
+}
+.footer1 li{
+	padding: 40px;
+}
+.footer1 a{
+	color:gray;
+	text-decoration: none;
+}
+.footer2{
+	padding: 0px;
+	font-size:0.8em;
+	background-color: #000000;
+	display:-webkit-flex;
+	display: flex;
+}
+.footer2 ul{
+	color:white;
+	text-decoration:none;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+.footer2 li{
+	float: left;
+	font-size:0.6em;
+}
+.footer2-li{
+	padding: 32px 10px 0;	
+}
+.footer2-img{
+	padding:  0;
+}
+.footer2 p{
+	float: right;
+	color: white;
+	font-size: 0.5em;
+	padding: 30px 0px 0;
+	display: block
+}
+.footer2 a{
+	color: white;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-p {
-  margin: 10px;
-  padding: 0;
-}
-
-.container {
-  max-width: 590px;
-  margin: 90px auto 0;
-  padding: 0 15px 30px;
-}
-
-p {
-  line-height: 1.8em;
-}
-
-.h2 {
-  font-size: 1.8em;
-  font-weight: 400;
-  text-align: center;
-  margin: 0 0 20px;
-  color: #1d1f20;
-}

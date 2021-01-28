@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+
+
 body{
-	 background-color:#C0C0C0;/*#B2B19C*/
+	 background-color:#E0E0E0;/*#B2B19C*/
 	  width:100%;
 	min-width: 100%;
 	margin:0px 0px 0px 0px;
@@ -61,39 +63,44 @@ nav .here {
   background: rgba(13, 62, 68, 0.42);
   border-radius: 4px;
 }
-
-
-
-
-/*＝＝＝＝＝⭐️＝＝＝＝
-　　　　💖メイン💖
-＝＝＝＝＝＝⭐️＝＝＝＝＝*/
-
-.sample_box{
-/* width:300px; */
-/*	// サイズがサンプルなので適時変更してください。*/
-/* margin:0 auto; */
-/*	//サンプルで中央に寄せたいので書かせていただいております。*/
-	 overflow:hidden; 
-/*	//これを記述することではみ出た部分を非表示にします。*/
+/*=========⭐️===========
+		💖メイン💖
+===========⭐️============*/
+.main{
+	top:30px;
+	padding-top: 44px;
 }
-.sample_box img{
- transition:1s all;
+/*＝＝＝＝＝＝＝＝＝
+　　✊inquiry
+＝＝＝＝＝＝＝＝＝*/
+.main-inquiry{
+/*	background-color: aquamarine;*/
+ 	padding-top: 50px ;
+	top:10px;
+	text-align: center;
 }
-.sample_box img:hover{
-  transform:scale(1.2,1.2);
-  transition:1s all;
+/* inputとtextareaのCSSを指定してください */
+input {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding:0 20px;
+  font-size: 18px;
+  border: 1px solid #EBEACF;
+	
 }
-.card-figure{
-	overflow: hidden;
-	/*	はみ出た部分を非表示にする*/
+textarea {
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 30px;
+  font-size: 18px;
+  border: 1px solid #EBEACF;
 }
-.card-figure　img{
- transition:1s all;
-}
-.card-figure img:hover{
-  transform:scale(1.2,1.2);
-  transition:1s all;
+/* contact-submitのCSSを指定してください */
+.contact-submit {
+	color: #A6A452;
+	padding:10px -20px;
 }
 
 /*＝＝＝＝＝⭐️＝＝＝＝
@@ -158,3 +165,66 @@ background-color: #E3E3E3;
 }
 
 
+
+
+
+/*＝＝＝＝＝⭐️＝＝＝＝
+　　　　💖フッター💖
+＝＝＝＝＝＝⭐️＝＝＝＝＝*/
+.footer{
+	background-color: #E3E3E3;
+	padding-top:100px;
+	 width: 100%;
+}
+.footer1 ul{
+background-color: #E3E3E3;
+	justify-content:center;
+	list-style: none;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	text-decoration: none;
+}
+.footer1 li{
+	padding: 40px;
+}
+.footer1 a{
+	color:gray;
+	text-decoration: none;
+}
+.footer2{
+	padding: 0px;
+	font-size:0.8em;
+	background-color: #000000;
+	display:-webkit-flex;
+	display: flex;
+}
+.footer2 ul{
+	color:white;
+	text-decoration:none;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+.footer2 li{
+	float: left;
+	font-size:0.6em;
+}
+.footer2-li{
+	padding: 32px 10px 0;	
+}
+.footer2-img{
+	padding:  0;
+}
+.footer2 p{
+	float: right;
+	color: white;
+	font-size: 0.5em;
+	padding: 30px 0px 0;
+	display: block
+}
+.footer2 a{
+	color: white;
+}

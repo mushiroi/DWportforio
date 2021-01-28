@@ -1,2 +1,218 @@
 @charset "UTF-8";
+
+
+
+body{
+	 background-color:#C0C0C0;/*#B2B19C*/
+	  width:100%;
+	min-width: 100%;
+	margin:0px 0px 0px 0px;
 }
+a {
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+li{
+list-style: none;
+}
+
+/*=========⭐️===========
+		💖ヘッター💖
+===========⭐️============*/
+/*透明にしたりするの*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  transition: all 1.5s ease;
+	z-index:1000;
+}
+
+.hidden {
+  background: none;
+  transition: all 1.0s ease;
+z-index:1000;
+position:fixed;
+}
+/* other - nav */
+header0{
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 20px;
+  margin: 0;
+ z-index: 500;
+}
+nav a {
+  color: black;
+/*  text-decoration: none;*/
+}
+nav li {
+  display: inline;
+  margin-right: 16px;
+}
+nav .here {
+  color: #fff;
+  padding: 5px 10px;
+  background: rgba(13, 62, 68, 0.42);
+  border-radius: 4px;
+}
+/*=========⭐️===========
+		💖メイン💖
+===========⭐️============*/
+.main{
+	top:30px;
+	margin-top:30px;
+	height: 100%;
+	/*margin-top:50px;*/
+	/*ヘッダー重なり回避 消す？？*/
+}
+/*＝＝＝＝＝＝＝＝＝
+　　✊top--menu
+＝＝＝＝＝＝＝＝＝*/
+.top-menu{
+	background-color: white;
+}
+.top-menu{
+	text-align: center;
+	top:50px;
+	padding-top:50px;
+}
+.top-menu1 li{
+	text-align: center;
+	float: left;
+	list-style: none;
+}
+
+/*＝＝＝＝＝⭐️＝＝＝＝
+　　　　💖フッター💖
+＝＝＝＝＝＝⭐️＝＝＝＝＝*/
+.footer{
+	background-color: #E3E3E3;
+	padding-top:100px;
+	 width: 100%;
+}
+.footer1 ul{
+background-color: #E3E3E3;
+	justify-content:center;
+	list-style: none;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	text-decoration: none;
+}
+.footer1 li{
+	padding: 40px;
+}
+.footer1 a{
+	color:gray;
+	text-decoration: none;
+}
+.footer2{
+	padding: 0px;
+	font-size:0.8em;
+	background-color: #000000;
+	display:-webkit-flex;
+	display: flex;
+}
+.footer2 ul{
+	color:white;
+	text-decoration:none;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+.footer2 li{
+	float: left;
+	font-size:0.6em;
+}
+.footer2-li{
+	padding: 32px 10px 0;	
+}
+.footer2-img{
+	padding:  0;
+}
+.footer2 p{
+	float: right;
+	color: white;
+	font-size: 0.5em;
+	padding: 30px 0px 0;
+	display: block
+}
+.footer2 a{
+	color: white;
+}
+
+
+
+
+
+/*＝＝＝＝＝⭐️＝＝＝＝
+　　　　💖フッター💖
+＝＝＝＝＝＝⭐️＝＝＝＝＝*/
+.footer{
+	background-color: #E3E3E3;
+	padding-top:100px;
+	 width: 100%;
+}
+.footer1 ul{
+background-color: #E3E3E3;
+	justify-content:center;
+	list-style: none;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	text-decoration: none;
+}
+.footer1 li{
+	padding: 40px;
+}
+.footer1 a{
+	color:gray;
+	text-decoration: none;
+}
+.footer2{
+	padding: 0px;
+	font-size:0.8em;
+	background-color: #000000;
+	display:-webkit-flex;
+	display: flex;
+}
+.footer2 ul{
+	color:white;
+	text-decoration:none;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+.footer2 li{
+	float: left;
+	font-size:0.6em;
+}
+.footer2-li{
+	padding: 32px 10px 0;	
+}
+.footer2-img{
+	padding:  0;
+}
+.footer2 p{
+	float: right;
+	color: white;
+	font-size: 0.5em;
+	padding: 30px 0px 0;
+	display: block
+}
+.footer2 a{
+	color: white;
+}
+
